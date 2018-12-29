@@ -15,78 +15,89 @@ const state = {
     show: 'hot',
 
 
-    hotTopicArticles: [{
-        img: '../../static/images/topic_1.jpg',
-        title: '游戏',
-        par: '玩转简书的第一步，从这个专题开始。' +
-             '想上首页热门榜么？好内容想被更多人看到么？来投稿吧！' +
-             '如果被拒也不要灰心哦～入选文章会进一个队列挨个上首页，请耐心等待。' +
-             '投稿必须原创。如果发现有非...',
-        number: '97233',
-        concern: '121.7',
-        keys: '故事、连载',
-        time: '20160620'
-    }, {
-        img: '../../static/images/topic_3.jpg',
-        title: '诗',
-        par: '诗，让你感受自己的心灵。' +
-             '专题主编：苏锦年 投稿须知：' +
-             '本专题收录古诗、词、现代诗以及诗词点评及指导。' +
-             '2.内容必须为原创，切勿用其他诗人的诗句。' +
-             '3.文章排版整洁，注意...',
-        number: '35420',
-        concern: '146.6',
-        keys: '诗',
-        time: '20160630'
-    }],
+
 
     News:
         {
-            title: '新闻',
-            content_1: '新项目投产',
-            content_2: '园区环境整治，',
-            content_3: '美国美女前来访问。',
-            content_4: '上下班路线调整，',
-            content_5: '为什么网络比爬还要缓慢?',
+            title: '精选新闻',
+            hotTop:{
+              title: '新项目投产',
+              pic: 'static/img/hotTopNews.jpg',
+              summary: '创新大厦是高新区积极实施“创新驱动发展”战略，推进产城融合发展、加快国家新型城镇化综合试点建设的一个重要项目，建成后将成为新地标，也为高新区招商引资提供了良好平台。',
+              date:'2018-12-10'
+            },
+
+
+            subNews:[
+              {title:'园区环境整治',  pic:'static/img/news-sub-1.JPEG',date:'2018-12-12'},
+              {title:'美国客人前来访问，对园区进行考察',  pic:'static/img/news-sub-2.jpeg',date:'2018-12-20'},
+              {title:'避开交通阻塞，上下班路线调整',  pic:'static/img/news-sub-3.jpeg',date:'2018-12-23'},
+              ] ,
 
             other: '更多新闻',
-            bg: 'url(../static/images/bonus_1.jpg)'
+
         },
   Hots:
         {
-            title: '热点',
-            content_1: '清洁工把地打扫干干净净',
-            content_2: '归还给一个陌不相识的人',
-            content_3: '有人拼车吗',
-            content_4: '今年的雪太大',
-            content_5: '食堂饭菜好吃',
+            title: '热点动态',
+            hots:[ '工业园区开展开放创新综合试验',
+            '打造全开放式生态体育公园',
+            '产业园区落户首家投资上亿企业',
+            '产业园PPP项目签约打造产业一体化',
+             '2018，中国铁路进入“复兴号”时代',
+              ],
 
           other: '更多热点',
-            bg: 'url(../static/images/bonus_2.jpg)'
+
         },
   Tasks:
         {
             title: '工单任务',
-            content_1: '工单任务——1',
-            content_2: '工单任务——2',
-            content_3: '工单任务——3',
-            content_4: '工单任务——4',
-            content_5: '工单任务——5',
+            taskList: [{
+              title: '工单任务1',
+              content: '1号楼管道维修',
+              status: false,
+            },
+              {
+                title: '工单任务2',
+                content: '2号楼照明系统检查',
+                status: false,
+              },
+              ],
 
           other: '更多任务',
-            bg: 'url(../static/images/bonus_3.jpg)'
+
         },
   Messages:
         {
-            title: '消息',
-            content_1: '',
-            content_2: '',
-            content_3: '',
-            content_4: '',
-            content_5: '',
+            title: '待办消息',
+            msgList: [{
+            title: '今天的待办消息之一',
+            status: false,
+          },
+            {
+              title: '今天的待办消息之二',
+              status: false,
+            },
+            {
+              title: '今天的待办消息之三',
+              status: false,
+            }, {
+              title: '今天的待办消息之四',
+              status: false,
+            },
+            {
+              title: '今天的待办消息之五',
+              status: true,
+            },
+            {
+              title: '今天的待办消息之六',
+              status: true,
+            }
+          ],
 
              other: '更多消息',
-            bg: 'url(../../static/images/bonus_4.jpg)'
+
         },
 
 
